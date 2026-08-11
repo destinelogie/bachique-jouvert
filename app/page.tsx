@@ -41,8 +41,9 @@ export default function LandingPage() {
       <nav className="fixed top-0 left-0 w-full z-[999] bg-[#08070D]/95 backdrop-blur-md border-b border-white/10 h-20 flex items-center">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           <Link href="/" className="flex items-center">
-            <Image src="/IMG_0979.png" alt="Bachique J'ouvert Logo" width={150} height={60} className="h-12 sm:h-16 w-auto object-contain drop-shadow-[0_0_10px_rgba(255,42,133,0.3)]" priority />
+            <img src="./IMG_0970.png" alt="Bachique J'ouvert Logo" className="h-16 sm:h-20 max-w-[180px] sm:max-w-[220px] object-contain drop-shadow-[0_0_15px_rgba(255,42,133,0.4)]" />
           </Link>
+
 
           <div className="hidden md:flex items-center space-x-8 font-medium text-sm text-gray-300">
             <a href="#home" className="hover:text-[#FF2A85] transition">Home</a>
