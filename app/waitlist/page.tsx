@@ -44,7 +44,7 @@ export default function WaitlistPage() {
   return (
     <div className="bg-[#08070D] text-white min-h-screen flex flex-col justify-between">
       <nav className="h-20 border-b border-white/10 flex items-center px-4">
-        <Link href="/"><Image src="/image_8.png" alt="Logo" width={130} height={50} className="object-contain" /></Link>
+        <Link href="/"><Image src="/IMG_0979.png" alt="Logo" width={130} height={50} className="object-contain" /></Link>
       </nav>
 
       <main className="max-w-2xl mx-auto w-full px-4 py-12 flex-grow">
