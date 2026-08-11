@@ -127,7 +127,7 @@ export default function LandingPage() {
         </section>
 
         {/* Perks Grid */}
-        <section id="about" class="py-20 px-4 bg-black/40 border-y border-white/10">
+        <section id="about" className="py-20 px-4 bg-black/40 border-y border-white/10">
           <div className="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-[#13111C] border border-white/10 rounded-3xl p-6 text-center group hover:border-[#FF2A85]/50 transition duration-300">
               <Wine className="w-10 h-10 text-[#FF2A85] mx-auto mb-4 group-hover:scale-110 transition" />
