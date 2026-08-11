@@ -53,6 +53,16 @@ export default function LandingPage() {
               <span>Waitlist</span>
               <span className="bg-[#FF2A85]/20 text-[#FF2A85] text-[10px] px-2 py-0.5 rounded-full border border-[#FF2A85]/30 uppercase tracking-wide">Pre-Launch</span>
             </Link>
+              {/* Large Main Hero Logo */}
+  <div className="my-6 flex justify-center items-center">
+    <img 
+      src="./IMG_0979.png" 
+      alt="Bachique J'ouvert" 
+      style={{ height: '140px', width: 'auto' }} 
+      className="object-contain drop-shadow-[0_0_25px_rgba(255,42,133,0.4)] transition-transform duration-300 hover:scale-105" 
+    />
+  </div>
+
           </div>
 
           <div className="flex items-center space-x-4">
