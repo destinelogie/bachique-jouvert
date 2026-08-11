@@ -11,7 +11,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  Global deployment configuration update
   return (
     <html lang="en" className="scroll-smooth">
       <body>{children}</body>
