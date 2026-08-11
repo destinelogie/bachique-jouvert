@@ -50,7 +50,7 @@ export default function LandingPage() {
             <Link href="/sections" className="hover:text-[#FF2A85] transition">Sections</Link>
             <Link href="/waitlist" className="text-[#FF2A85] font-bold flex items-center space-x-1.5 hover:opacity-85 transition">
               <span>Waitlist</span>
-              <span class="bg-[#FF2A85]/20 text-[#FF2A85] text-[10px] px-2 py-0.5 rounded-full border border-[#FF2A85]/30 uppercase tracking-wide">Pre-Launch</span>
+              <span className="bg-[#FF2A85]/20 text-[#FF2A85] text-[10px] px-2 py-0.5 rounded-full border border-[#FF2A85]/30 uppercase tracking-wide">Pre-Launch</span>
             </Link>
           </div>
 
