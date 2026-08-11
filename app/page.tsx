@@ -41,7 +41,7 @@ export default function LandingPage() {
       <nav className="fixed top-0 left-0 w-full z-[999] bg-[#08070D]/95 backdrop-blur-md border-b border-white/10 h-20 flex items-center">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           <Link href="/" className="flex items-center">
-            <img src="./IMG_0970.png" alt="Bachique J'ouvert Logo" className="h-16 sm:h-20 max-w-[180px] sm:max-w-[220px] object-contain drop-shadow-[0_0_15px_rgba(255,42,133,0.4)]" />
+            <img src="./IMG_0979.png" alt="Bachique J'ouvert Logo" className="h-16 sm:h-20 max-w-[180px] sm:max-w-[220px] object-contain drop-shadow-[0_0_15px_rgba(255,42,133,0.4)]" />
           </Link>
 
 
