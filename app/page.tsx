@@ -38,10 +38,10 @@ export default function LandingPage() {
   return (
     <div className="bg-[#08070D] text-white min-h-screen font-sans antialiased flex flex-col justify-between selection:bg-[#FF2A85]">
       {/* Navigation */}
-      <nav className="fixed top-0 left-0 w-full z-[999] bg-[#08070D]/95 backdrop-blur-md border-b border-white/10 h-20 flex items-center">
+      <nav className="fixed top-0 left-0 w-full z-[999] bg-[#08070D]/95 backdrop-blur-md border-b border-white/10 min-h-[5rem] py-2 flex items-center">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 flex items-center justify-between">
           <Link href="/" className="flex items-center">
-            <img src="./IMG_0979.png" alt="Bachique J'ouvert Logo" className="h-16 sm:h-20 w-auto object-contain max-h-full drop-shadow-[0_0_10px_rgba(255,42,133,0.3)]" />
+            <img src="./IMG_0979.png" alt="Bachique J'ouvert Logo" className="h-24 sm:h-32 w-auto object-contain max-h-28 drop-shadow-[0_0_10px_rgba(255,42,133,0.3)] py-1" />
           </Link>
 
 
