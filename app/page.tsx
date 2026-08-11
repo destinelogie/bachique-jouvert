@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Wine, ShieldHalved, SprayCan, Utensils, Zap, Menu, X, ShoppingBag, ArrowUpRight } from 'lucide-react';
+import { Wine, ShieldHalf, SprayCan, Utensils, Zap, Menu, X, ShoppingBag, ArrowUpRight } from 'lucide-react';
 
 export default function LandingPage() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -135,7 +135,7 @@ export default function LandingPage() {
               <p className="text-xs text-gray-400">Fully stocked drink trucks with top-shelf alcohol flowing nonstop.</p>
             </div>
             <div className="bg-[#13111C] border border-white/10 rounded-3xl p-6 text-center group hover:border-[#8B3AEE]/50 transition duration-300">
-              <ShieldHalved className="w-10 h-10 text-[#8B3AEE] mx-auto mb-4 group-hover:scale-110 transition" />
+              <ShieldHalf className="w-10 h-10 text-[#8B3AEE] mx-auto mb-4 group-hover:scale-110 transition" />
               <h3 className="font-bold text-lg mb-2">Tight Security Band</h3>
               <p className="text-xs text-gray-400">Dedicated extraction teams and tight rope security protocols.</p>
             </div>
