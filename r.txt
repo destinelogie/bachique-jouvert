@@ -1,0 +1,50 @@
+{/* Fixed Main Navigation Bar */}
+<header className="fixed top-0 left-0 right-0 z-50 bg-[#08070D]/90 backdrop-blur-md border-b border-white/10 px-4 py-3">
+  <div className="max-w-7xl mx-auto flex items-center justify-between">
+
+    {/* Left Side: Navigation Links (Desktop) */}
+    <nav className="hidden md:flex items-center gap-6 text-sm font-medium">
+      <a href="#home" className="text-gray-300 hover:text-[#FF2A85] transition-colors">Home</a>
+      <a href="#about" className="text-gray-300 hover:text-[#FF2A85] transition-colors">About</a>
+      <a href="#sections" className="text-gray-300 hover:text-[#FF2A85] transition-colors">Sections</a>
+      <a href="#waitlist" className="text-gray-300 hover:text-[#FF2A85] transition-colors flex items-center gap-1.5">
+        Waitlist 
+        <span className="bg-[#FF2A85]/20 text-[#FF2A85] text-[10px] px-2 py-0.5 rounded-full border border-[#FF2A85]/30 uppercase tracking-wide">
+          Pre-Launch
+        </span>
+      </a>
+      <a href="#memory-vault" className="text-gray-300 hover:text-[#8B3AEE] transition-colors">Memory Vault</a>
+      <a href="#merch-store" className="text-gray-300 hover:text-[#4CC9F0] transition-colors">Merch Store</a>
+    </nav>
+
+    {/* Center: Single Dead-Centered Main Logo */}
+    <div className="flex-1 md:flex-initial flex justify-center">
+      <a href="#home">
+        <img 
+          src="./IMG_0979.png" 
+          alt="Bachique J'ouvert" 
+          style={{ height: '55px', width: 'auto' }} 
+          className="object-contain drop-shadow-[0_0_15px_rgba(255,42,133,0.4)] transition-transform hover:scale-105" 
+        />
+      </a>
+    </div>
+
+    {/* Right Side: Action CTA & Bag */}
+    <div className="flex items-center gap-4">
+      <a href="#merch-store" className="relative text-gray-300 hover:text-white transition-colors" aria-label="Cart">
+        <ShoppingBag className="w-5 h-5 text-gray-300 hover:text-[#FF2A85] transition-colors" />
+        <span className="absolute -top-2 -right-2 bg-[#FF2A85] text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center">
+          0
+        </span>
+      </a>
+
+      <a 
+        href="#waitlist" 
+        className="hidden sm:inline-flex px-4 py-2 rounded-full text-xs font-bold text-white bg-gradient-to-r from-[#FF2A85] via-[#8B3AEE] to-[#4CC9F0] hover:opacity-90 shadow-[0_0_15px_rgba(255,42,133,0.4)] transition-all uppercase tracking-wider"
+      >
+        Join VIP Waitlist
+      </a>
+    </div>
+
+  </div>
+</header>
