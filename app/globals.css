@@ -7,3 +7,60 @@ body {
   color: #ffffff;
   overflow-x: hidden;
 }
+
+.purple-heat-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  pointer-events: none;
+  background: #08070D;
+  overflow: hidden;
+}
+
+.purple-smoke-cloud-1,
+.purple-smoke-cloud-2 {
+  position: absolute;
+  top: -20vh;
+  left: -20vw;
+  width: 140vw;
+  height: 140vh;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.35;
+  mix-blend-mode: screen;
+}
+
+.purple-smoke-cloud-1 {
+  background: radial-gradient(circle, rgba(139, 58, 238, 0.6) 0%, rgba(255, 42, 133, 0.2) 40%, transparent 70%);
+  animation: floatSmoke1 18s ease-in-out infinte alternate;
+}
+
+.purple-smoke-cloud-2 {
+  background: radial-gradient(circle, rgba(120, 20, 220, 0.5) 0%, rgba(76, 201, 240, 0.15) 45%, transparent 70%);
+  animation: floatSmoke2 24s ease-in-out infinte alternate;
+}
+
+@keyframes floatSmoke1 {
+  0% {
+      transform: translate(0, 0) scale(1) rotate(0deg);
+  }
+  50% {
+      transform: translate(8%, 10%) scale(1.15) rotate(15deg);
+  }
+  100% {
+      transform: translate(-5%, 5%) scale(0.95) rotate(-10deg);
+  }
+
+@keyframes floatSmoke2 {
+  0% {
+      transform: translate(0, 0) scale(1.1) rotate(0deg);
+  }
+  50% {
+      transform: translate(-10%, -8%) scale(0.9) rotate(-20deg);
+  }
+  100% {
+      transform: translate(6%, -12%) scale(1.2) rotate(10deg);
+  }
