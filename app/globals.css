@@ -53,6 +53,7 @@ body {
   100% {
       transform: translate(-5%, 5%) scale(0.95) rotate(-10deg);
   }
+}
 
 @keyframes floatSmoke2 {
   0% {
@@ -64,3 +65,4 @@ body {
   100% {
       transform: translate(6%, -12%) scale(1.2) rotate(10deg);
   }
+}
