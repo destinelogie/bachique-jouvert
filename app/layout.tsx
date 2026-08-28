@@ -15,19 +15,22 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className="bg-[#08070D] text-white overflow-x-hidden relative min-h-screen">
         
-        {/* Fixed "Purple Heat" Smoke Layer */}
-        <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
-          {/* Top-Right Smoke Cloud */}
-          <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-gradient-to-br from-[#8B3AEE]/40 via-[#FF2A85]/20 to-transparent blur-[120px] animate-pulse" />
+        {/* Animated Purple Heat Smoke Layer */}
+        <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden bg-[#08070D]">
           
-          {/* Bottom-Left Smoke Cloud */}
-          <div className="absolute -bottom-40 -left-40 w-[700px] h-[700px] rounded-full bg-gradient-to-tr from-[#8B3AEE]/50 via-[#4CC9F0]/20 to-transparent blur-[140px] animate-pulse" style={{ animationDuration: '8s' }} />
+          {/* Base Ambient Heat Glow */}
+          <div className="absolute inset-0 bg-radial from-[#8B3AEE]/30 via-[#FF2A85]/10 to-transparent blur-[100px]" />
 
-          {/* Center Heat Glow */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full bg-radial from-[#8B3AEE]/25 via-transparent to-transparent blur-[150px]" />
+          {/* Moving Smoke Waves */}
+          <div className="smoke-container">
+            <div className="smoke-wave wave-1"></div>
+            <div className="smoke-wave wave-2"></div>
+            <div className="smoke-wave wave-3"></div>
+          </div>
+
         </div>
 
-        {/* Page Content Wrapper (Sits above the smoke) */}
+        {/* Page Content */}
         <div className="relative z-10">
           {children}
         </div>
