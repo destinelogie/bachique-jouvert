@@ -110,7 +110,7 @@ export default function LandingPage() {
               </span>
             </h1>
             <p className="text-gray-400 text-base sm:text-lg max-w-2xl mx-auto">
-              Get ready to take over the streets. Join the priority waitlist to secure your spot for Trinidad's ultimate J'ouvert morning road march experience.
+              Get ready to take over the streets. Join the priority waitlist to secure your spot for Trinidad's ultimate J'ouvert morning experience.
             </p>
 
             {/* Countdown Container */}
@@ -174,7 +174,7 @@ export default function LandingPage() {
               <div className="space-y-4">
                 <span className="text-[#FFD700] text-xs font-semibold uppercase tracking-wider block">Upcoming Pre-Carnival Event</span>
                 <h3 className="text-3xl font-extrabold group-hover:text-[#FF2A85] transition">Run, Walk & Soca Warmup</h3>
-                <p className="text-gray-400 text-sm">Run, walk, or dance your way across the finish line! All proceeds go toward building the road march infrastructure.</p>
+                <p className="text-gray-400 text-sm">Run, walk, or dance your way across the finish line! All proceeds go toward building the infrastructure.</p>
                 <div className="flex items-center justify-between pt-4 border-t border-white/10">
                   <span className="text-xs text-gray-400 font-bold">islandetickets.com</span>
                   <span className="inline-flex items-center space-x-2 bg-gradient-to-r from-[#FF2A85] to-[#8B3AEE] text-white font-bold px-4 py-2 rounded-full text-xs">
