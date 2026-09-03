@@ -1,16 +1,27 @@
 'use client';
 
+import React from 'react';
+
 export default function SmokeBackground() {
   return (
     <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden bg-[#08070D]">
-      {/* Primary Deep Neon Purple Smoke Blob */}
-      <div className="absolute top-[-10%] left-[-10%] w-[60vw] h-[60vw] rounded-full bg-[#8B3AEE]/25 blur-[120px] animate-smoke-slow" />
+      {/* Deep Vibrant Purple Smoke Cloud - Top Left */}
+      <div 
+        className="absolute -top-20 -left-20 w-[80vw] h-[80vw] max-w-[700px] max-h-[700px] rounded-full bg-[#8B3AEE]/40 blur-[120px] animate-pulse"
+        style={{ animationDuration: '6s' }}
+      />
 
-      {/* Secondary Vibrant Pink/Magenta Smoke Accent */}
-      <div className="absolute bottom-[-10%] right-[-10%] w-[70vw] h-[70vw] rounded-full bg-[#FF2A85]/20 blur-[150px] animate-smoke-reverse" />
+      {/* Hot Magenta/Pink Smoke Accent - Bottom Right */}
+      <div 
+        className="absolute -bottom-20 -right-20 w-[85vw] h-[85vw] max-w-[750px] max-h-[750px] rounded-full bg-[#FF2A85]/35 blur-[140px] animate-pulse"
+        style={{ animationDuration: '8s' }}
+      />
 
-      {/* Center Drifting Smoke Accent */}
-      <div className="absolute top-[30%] left-[20%] w-[50vw] h-[50vw] rounded-full bg-[#8B3AEE]/15 blur-[140px] animate-smoke-drift" />
+      {/* Electric Purple Center Drift */}
+      <div 
+        className="absolute top-1/3 left-1/4 w-[60vw] h-[60vw] max-w-[500px] max-h-[500px] rounded-full bg-[#8B3AEE]/25 blur-[100px] animate-ping"
+        style={{ animationDuration: '12s' }}
+      />
     </div>
   );
 }
