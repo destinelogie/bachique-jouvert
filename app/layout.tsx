@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import SmokeBackground from '@/components/SmokeBackground';
+import SmokeBackground from './components/SmokeBackground';
 
 export const metadata: Metadata = {
   title: "Bachique J'ouvert",
