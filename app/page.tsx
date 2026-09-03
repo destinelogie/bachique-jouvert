@@ -94,7 +94,7 @@ export default function LandingPage() {
             <span className="bg-[#FF2A85] text-white text-xs px-2 py-0.5 rounded-full">VIP Access</span>
           </Link>
           <a href="#memory-vault" onClick={() => setMobileMenuOpen(false)} className="block text-gray-300 py-2 border-b border-white/5">Memory Vault</a>
-          <a href="#merch-store" onClick={() => setMobileMenuOpen(false)} className="block text-gray-300 py-2 border-b border-white/5">Merch Store</a>
+          <a href="/merch" onClick={() => setMobileMenuOpen(false)} className="block text-gray-300 py-2 border-b border-white/5">Merch Store</a>
         </div>
       )}
 
