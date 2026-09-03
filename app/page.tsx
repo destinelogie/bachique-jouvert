@@ -9,7 +9,7 @@ export default function LandingPage() {
   const [timeLeft, setTimeLeft] = useState({ days: '00', hours: '00', minutes: '00', seconds: '00' });
 
   useEffect(() => {
-    const launchTarget = new Date("November 15, 2026 00:00:00").getTime();
+    const launchTarget = new Date("January 21, 2027 00:00:00").getTime();
     
     const interval = setInterval(() => {
       const now = new Date().getTime();
