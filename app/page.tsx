@@ -142,32 +142,44 @@ export default function LandingPage() {
           </div>
         </section>
 
-        {/* Perks Grid */}
-        <section id="about" className="py-20 px-4 bg-black/40 border-y border-white/10 scroll-mt-28">
-          <div className="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
-            <div className="bg-[#13111C] border border-white/10 rounded-3xl p-6 text-center group hover:border-[#FF2A85]/50 transition duration-300">
-              <Wine className="w-10 h-10 text-[#FF2A85] mx-auto mb-4 group-hover:scale-110 transition" />
-              <h3 className="font-bold text-lg mb-2">Unlimited Premium Drinks</h3>
-              <p className="text-xs text-gray-400">Fully stocked drink trucks with top-shelf alcohol flowing nonstop.</p>
+{/* Updated About Section */}
+        <section id="about" className="py-24 px-4 bg-black/40 border-y border-white/10 scroll-mt-28 relative">
+          <div className="max-w-4xl mx-auto text-center space-y-8">
+            
+            <span className="inline-block px-4 py-1.5 rounded-full bg-[#8B3AEE]/10 text-[#8B3AEE] border border-[#8B3AEE]/30 text-xs font-bold tracking-widest uppercase">
+              Our Story & Vision
+            </span>
+
+            <h2 className="text-3xl sm:text-5xl font-extrabold uppercase tracking-tight">
+              Bacchanal Sunrise. <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2A85] via-[#8B3AEE] to-[#4CC9F0]">
+                Bacchanal Day Break.
+              </span>
+            </h2>
+
+            <div className="space-y-6 text-gray-300 text-base sm:text-lg leading-relaxed text-center sm:text-justify max-w-3xl mx-auto">
+              <p>
+                <strong className="text-white font-semibold">Bachique J'ouvert</strong> which translates to <em className="text-[#FF2A85] not-italic font-semibold">Bacchanal Sunrise</em> or <em className="text-[#4CC9F0] not-italic font-semibold">Bacchanal Day break</em> was birthed from the need to be creative, rebellious, seen, heard, to feel free and to feel a sense of belonging and community. These attributes are what we hope to bring to, not only the streets on Carnival Monday but to the community we build along the way.
+              </p>
+
+              <p>
+                Our vision is to bring to you the best service while creating a memorable J'ouvert experience. Being able to express yourself in your truest, most authentic, Bachique form, in a safe environment will always be our top priority.
+              </p>
+
+              <p>
+                On J'ouvert morning you will be transported and immersed in Trinidad and Tobago's culture, the band's creative theme/portrayal, genuine good vibes and vibrant energy that will leave you having <span className="text-[#FF2A85] font-bold">"Carnival Tabanca"</span> for weeks. We warmly welcome you to the Bachique J'ouvert Band.
+              </p>
             </div>
-            <div className="bg-[#13111C] border border-white/10 rounded-3xl p-6 text-center group hover:border-[#8B3AEE]/50 transition duration-300">
-              <ShieldHalf className="w-10 h-10 text-[#8B3AEE] mx-auto mb-4 group-hover:scale-110 transition" />
-              <h3 className="font-bold text-lg mb-2">Tight Security Band</h3>
-              <p className="text-xs text-gray-400">Dedicated extraction teams and tight rope security protocols.</p>
+
+            <div className="pt-6 border-t border-white/10 max-w-md mx-auto">
+              <p className="text-lg sm:text-xl font-black text-transparent bg-clip-text bg-gradient-to-r from-[#FF2A85] via-[#8B3AEE] to-[#4CC9F0] tracking-wide uppercase">
+                Welcome, our Bachique Baddies & Bachique Boy-toys ✨
+              </p>
             </div>
-            <div className="bg-[#13111C] border border-white/10 rounded-3xl p-6 text-center group hover:border-[#4CC9F0]/50 transition duration-300">
-              <SprayCan className="w-10 h-10 text-[#4CC9F0] mx-auto mb-4 group-hover:scale-110 transition" />
-              <h3 className="font-bold text-lg mb-2">Paint, Powder & Mud</h3>
-              <p className="text-xs text-gray-400">Premium non-toxic neon paints and organic mud kits.</p>
-            </div>
-            <div className="bg-[#13111C] border border-white/10 rounded-3xl p-6 text-center group hover:border-[#FFD700]/50 transition duration-300">
-              <Utensils className="w-10 h-10 text-[#FFD700] mx-auto mb-4 group-hover:scale-110 transition" />
-              <h3 className="font-bold text-lg mb-2">Post-March Breakfast</h3>
-              <p className="text-xs text-gray-400">Hot local Trinidadian breakfast waiting at the cool-down zone.</p>
-            </div>
+
           </div>
         </section>
-
+        
         {/* 5K Event Entry */}
         <section className="py-20 px-4 max-w-7xl mx-auto">
           <a href="https://islandetickets.com" target="_blank" rel="noreferrer" className="group block rounded-3xl bg-[#13111C] border border-white/10 hover:border-[#FF2A85]/50 transition p-8 shadow-2xl">
