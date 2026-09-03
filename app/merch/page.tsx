@@ -19,7 +19,7 @@ const PRODUCTS: Product[] = [
     name: "Bachique Insulated Tumbler (24oz)",
     priceTTD: 150,
     category: 'Drinkware',
-    image: 'https://images.unsplash.com/photo-1517256064527-09c73fc73e38?auto=format&fit=crop&q=80&w=600',
+    image: 'Free_Tumbler_Mockup_3.png',
     description: 'Keep your drinks ice-cold all J\'ouvert morning long. Features custom neon Bachique graphics.'
   },
   {
