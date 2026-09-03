@@ -51,7 +51,7 @@ export default function LandingPage() {
               <span className="bg-[#FF2A85]/20 text-[#FF2A85] text-[10px] px-2 py-0.5 rounded-full border border-[#FF2A85]/30 uppercase tracking-wide">Pre-Launch</span>
             </Link>
             <a href="#memory-vault" className="hover:text-[#8B3AEE] transition">Memory Vault</a>
-            <a href="#merch-store" className="hover:text-[#4CC9F0] transition">Merch Store</a>
+            <a href="/merch" className="hover:text-[#4CC9F0] transition">Merch Store</a>
           </div>
 
           {/* Center Logo (Dead Center Positioning) */}
