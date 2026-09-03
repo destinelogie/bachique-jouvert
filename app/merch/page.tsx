@@ -27,7 +27,7 @@ const PRODUCTS: Product[] = [
     name: "Bacchanal Road Tee / Crop Top",
     priceTTD: 180,
     category: 'Apparel',
-    image: 'https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&q=80&w=600',
+    image: 'T-Shirt_02.png',
     description: 'Breathable, lightweight cotton blend designed for maximum movement on the road.'
   },
   {
