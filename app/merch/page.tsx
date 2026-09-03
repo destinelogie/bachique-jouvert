@@ -43,7 +43,7 @@ const PRODUCTS: Product[] = [
     name: "Neon Glow Bandana & Whistle Set",
     priceTTD: 60,
     category: 'Accessories',
-    image: 'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?auto=format&fit=crop&q=80&w=600',
+    image: '手拿小风扇logo样机-当前视图.png',
     description: 'High-visibility neon bandana paired with a loud carnival whistle.'
   }
 ];
