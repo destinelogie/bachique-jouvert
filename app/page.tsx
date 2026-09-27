@@ -39,14 +39,10 @@ export default function LandingPage() {
       
       {/* Fixed Centered Navigation */}
       <nav className="fixed top-0 left-0 w-full z-[999] bg-[#08070D]/95 backdrop-blur-md border-b border-white/10 py-3 px-4 sm:px-6 lg:px-8">
+  <div className="max-w-7xl mx-auto grid grid-cols-3 items-center">
 
-  <div className="max-w-[1440px] mx-auto grid grid-cols-[1fr_auto_1fr] items-center gap-4">
-
-    {/* =========================================
-        LEFT NAVIGATION
-        ========================================= */}
-
-    <div className="hidden lg:flex items-center justify-start gap-4 xl:gap-6 font-medium text-sm text-gray-300 min-w-0">
+    {/* LEFT SIDE */}
+    <div className="hidden md:flex items-center gap-4 lg:gap-5 font-medium text-sm text-gray-300">
 
       <a
         href="#home"
@@ -71,23 +67,16 @@ export default function LandingPage() {
 
       <Link
         href="/waitlist"
-        className="text-[#FF2A85] font-bold flex items-center gap-1.5 hover:opacity-85 transition whitespace-nowrap"
+        className="text-[#FF2A85] font-bold whitespace-nowrap"
       >
-        <span>Waitlist</span>
-
-        <span className="bg-[#FF2A85]/20 text-[#FF2A85] text-[9px] px-1.5 py-0.5 rounded-full border border-[#FF2A85]/30 uppercase tracking-wide">
-          Pre-Launch
-        </span>
+        Waitlist
       </Link>
 
     </div>
 
 
-    {/* =========================================
-        CENTER LOGO
-        ========================================= */}
-
-    <div className="flex items-center justify-center">
+    {/* CENTER LOGO */}
+    <div className="flex justify-center">
 
       <a
         href="#home"
@@ -97,11 +86,11 @@ export default function LandingPage() {
           src="/IMG_0979.png"
           alt="Bachique J'ouvert Logo"
           className="
-            object-contain
-            h-[52px]
-            lg:h-[56px]
-            xl:h-[60px]
+            h-[50px]
+            md:h-[54px]
+            lg:h-[58px]
             w-auto
+            object-contain
             drop-shadow-[0_0_15px_rgba(255,42,133,0.4)]
             transition-transform
             hover:scale-105
@@ -112,78 +101,40 @@ export default function LandingPage() {
     </div>
 
 
-    {/* =========================================
-        RIGHT NAVIGATION + ACTIONS
-        ========================================= */}
-
-    <div className="hidden lg:flex items-center justify-end gap-3 xl:gap-5 min-w-0">
+    {/* RIGHT SIDE */}
+    <div className="hidden md:flex items-center justify-end gap-4 lg:gap-5 font-medium text-sm text-gray-300">
 
       <a
         href="#memory-vault"
-        className="hover:text-[#8B3AEE] transition whitespace-nowrap font-medium text-sm text-gray-300"
+        className="hover:text-[#8B3AEE] transition whitespace-nowrap"
       >
         Memory Vault
       </a>
 
       <Link
         href="/merch"
-        className="hover:text-[#4CC9F0] transition whitespace-nowrap font-medium text-sm text-gray-300"
+        className="hover:text-[#4CC9F0] transition whitespace-nowrap"
       >
         Merch Store
       </Link>
 
-
-      {/* Shopping Bag */}
-
       <Link
         href="/waitlist"
-        className="relative p-2 text-gray-300 hover:text-[#FF2A85] transition flex-shrink-0"
+        className="relative p-2 text-gray-300 hover:text-[#FF2A85] transition"
         aria-label="Shopping Bag"
       >
         <ShoppingBag className="w-5 h-5" />
 
-        <span className="absolute top-0.5 right-0 bg-[#FF2A85] text-white text-[9px] font-bold rounded-full h-4 w-4 flex items-center justify-center">
+        <span className="absolute top-1 right-1 bg-[#FF2A85] text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center">
           0
         </span>
-      </Link>
-
-
-      {/* VIP Button */}
-
-      <Link
-        href="/waitlist"
-        className="
-          hidden xl:inline-flex
-          bg-gradient-to-r
-          from-[#FF2A85]
-          via-[#8B3AEE]
-          to-[#4CC9F0]
-          text-white
-          font-bold
-          px-4
-          py-2
-          rounded-full
-          text-[10px]
-          uppercase
-          tracking-wider
-          transition
-          shadow-lg
-          shadow-[#FF2A85]/20
-          hover:opacity-90
-          whitespace-nowrap
-        "
-      >
-        Join VIP Waitlist
       </Link>
 
     </div>
 
 
-    {/* =========================================
-        MOBILE MENU BUTTON
-        ========================================= */}
-
-    <div className="lg:hidden flex items-center justify-end">
+    {/* MOBILE RIGHT SIDE */}
+    <div className="md:hidden flex items-center justify-end gap-2">
 
       <Link
         href="/waitlist"
@@ -212,7 +163,6 @@ export default function LandingPage() {
     </div>
 
   </div>
-
 </nav>
 
       {/* Mobile Drawer */}
