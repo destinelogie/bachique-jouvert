@@ -92,7 +92,7 @@ export default function MerchStorePage() {
   };
 
   return (
-    <div className="bg-[#08070D] text-white min-h-screen font-sans antialiased selection:bg-[#FF2A85]">
+    <div className="bg-transparent text-white min-h-screen font-sans antialiased selection:bg-[#FF2A85]">
       
       {/* Header */}
       <header className="sticky top-0 z-40 bg-[#08070D]/90 backdrop-blur-md border-b border-white/10 py-4 px-4 sm:px-8">
@@ -101,7 +101,7 @@ export default function MerchStorePage() {
             <ArrowLeft className="w-4 h-4" />
             <span>Back to Home</span>
           </Link>
-          <h1 className="text-xl font-black uppercase tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-[#FF2A85] via-[#8B3AEE] to-[#4CC9F0]">
+          <h1 className="font-agreloy text-xl font-black uppercase tracking-wider text-transparent bg-clip-text bg-gradient-to-r from-[#FF2A85] via-[#8B3AEE] to-[#4CC9F0]">
             Bachique Store
           </h1>
           <button 
@@ -124,7 +124,7 @@ export default function MerchStorePage() {
           <span className="inline-block px-4 py-1.5 rounded-full bg-[#4CC9F0]/10 text-[#4CC9F0] border border-[#4CC9F0]/30 text-xs font-bold tracking-widest uppercase">
             Official Road Gear & Merchandise
           </span>
-          <h2 className="text-4xl font-extrabold uppercase">Gear Up For J'ouvert</h2>
+          <h2 className="font-agreloy text-4xl font-extrabold uppercase">Gear Up For J'ouvert</h2>
           <p className="text-gray-400 text-sm">Browse official Bachique merchandise. Pay instantly online in TTD or via local bank transfer.</p>
         </div>
 
