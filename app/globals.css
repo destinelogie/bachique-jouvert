@@ -2,9 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-/* =========================================================
-   GLOBAL SITE
-   ========================================================= */
 
 html {
   background: #08070D;
@@ -17,9 +14,13 @@ body {
   overflow-x: hidden;
 }
 
+
+
+
 .smoke-background {
   position: fixed;
   inset: 0;
+
   width: 100vw;
   height: 100vh;
 
@@ -28,634 +29,145 @@ body {
 
   z-index: 0;
 
+  background: #08070D;
+}
+
+
+
+
+.smoke-video {
+  position: absolute;
+
+  width: 115vw;
+  height: 115vh;
+
+  max-width: none;
+
+  left: 50%;
+  top: 50%;
+
+  transform: translate(-50%, -50%);
+
+  object-fit: cover;
+
+ 
+  filter:
+    grayscale(1)
+    sepia(1)
+    hue-rotate(235deg)
+    saturate(5)
+    brightness(0.65)
+    contrast(1.15);
+
+  opacity: 0.55;
+
+  
+  mix-blend-mode: screen;
+
+  
+  animation: smokeCameraMove 32s ease-in-out infinite alternate;
+}
+
+
+
+
+.smoke-tint {
+  position: absolute;
+  inset: -10%;
+
+  pointer-events: none;
+
   background:
     radial-gradient(
-      ellipse at center,
-      rgba(38, 12, 48, 0.35) 0%,
-      rgba(8, 7, 13, 0.95) 75%
+      ellipse at 15% 55%,
+      rgba(255, 42, 133, 0.20) 0%,
+      rgba(255, 42, 133, 0.08) 30%,
+      transparent 60%
     ),
-    #08070D;
 
-  isolation: isolate;
-}
-
-
-
-.smoke-haze {
-  position: absolute;
-
-  width: 120vw;
-  height: 120vh;
-
-  left: -10vw;
-  top: -10vh;
-
-  border-radius: 50%;
-
-  filter: blur(120px);
-
-  opacity: 0.35;
-
-  pointer-events: none;
-}
-
-
-/* Pink atmospheric glow */
-
-.smoke-haze-1 {
-  background:
     radial-gradient(
-      ellipse at 30% 50%,
-      rgba(255, 42, 133, 0.28) 0%,
-      rgba(255, 42, 133, 0.10) 25%,
+      ellipse at 75% 35%,
+      rgba(139, 58, 238, 0.25) 0%,
+      rgba(139, 58, 238, 0.10) 35%,
       transparent 65%
-    );
+    ),
 
-  animation:
-    hazeDriftOne 32s ease-in-out infinite alternate;
-}
-
-
-/* Purple atmospheric glow */
-
-.smoke-haze-2 {
-  background:
     radial-gradient(
-      ellipse at 70% 40%,
-      rgba(139, 58, 238, 0.32) 0%,
-      rgba(76, 201, 240, 0.08) 30%,
-      transparent 68%
+      ellipse at 50% 100%,
+      rgba(76, 201, 240, 0.10) 0%,
+      transparent 55%
     );
-
-  animation:
-    hazeDriftTwo 42s ease-in-out infinite alternate;
-}
-
-
-
-
-.smoke-cloud {
-  position: absolute;
-
-  width: 100vw;
-  height: 100vh;
-
-  left: 0;
-  top: 0;
-
-  pointer-events: none;
-
-  filter: blur(35px);
-
-  opacity: 0.58;
-}
-
-
-
-
-.smoke-cloud-1 {
-  animation:
-    smokeJourneyOne 38s ease-in-out infinite;
-}
-
-
-
-
-.smoke-cloud-2 {
-  animation:
-    smokeJourneyTwo 52s ease-in-out infinite;
-}
-
-
-
-
-.smoke-cloud-3 {
-  animation:
-    smokeJourneyThree 64s ease-in-out infinite;
-}
-
-
-
-
-.smoke-puff {
-  position: absolute;
-
-  border-radius: 50%;
-
-  filter: blur(55px);
-
-  transform-origin: center;
 
   mix-blend-mode: screen;
-}
 
+  opacity: 0.85;
 
-
-.puff-1 {
-  width: 55vw;
-  height: 38vw;
-
-  left: -12vw;
-  top: 8vh;
-
-  background:
-    radial-gradient(
-      ellipse,
-      rgba(255, 42, 133, 0.32) 0%,
-      rgba(255, 42, 133, 0.16) 30%,
-      transparent 72%
-    );
-
-  animation:
-    puffFloatOne 27s ease-in-out infinite alternate;
-}
-
-
-.puff-2 {
-  width: 48vw;
-  height: 35vw;
-
-  right: -15vw;
-  top: 35vh;
-
-  background:
-    radial-gradient(
-      ellipse,
-      rgba(255, 42, 133, 0.22) 0%,
-      rgba(139, 58, 238, 0.14) 35%,
-      transparent 70%
-    );
-
-  animation:
-    puffFloatTwo 34s ease-in-out infinite alternate;
+  animation: smokeColourDrift 40s ease-in-out infinite alternate;
 }
 
 
 
 
-.puff-3 {
-  width: 60vw;
-  height: 40vw;
+@keyframes smokeCameraMove {
 
-  left: 20vw;
-  bottom: -15vh;
-
-  background:
-    radial-gradient(
-      ellipse,
-      rgba(139, 58, 238, 0.32) 0%,
-      rgba(139, 58, 238, 0.15) 35%,
-      transparent 72%
-    );
-
-  animation:
-    puffFloatThree 31s ease-in-out infinite alternate;
-}
-
-
-
-.puff-4 {
-  width: 45vw;
-  height: 34vw;
-
-  left: -10vw;
-  top: 55vh;
-
-  background:
-    radial-gradient(
-      ellipse,
-      rgba(76, 201, 240, 0.18) 0%,
-      rgba(76, 201, 240, 0.08) 35%,
-      transparent 72%
-    );
-
-  animation:
-    puffFloatFour 40s ease-in-out infinite alternate;
-}
-
-
-
-
-.puff-5 {
-  width: 52vw;
-  height: 42vw;
-
-  right: -20vw;
-  top: -12vh;
-
-  background:
-    radial-gradient(
-      ellipse,
-      rgba(139, 58, 238, 0.28) 0%,
-      rgba(255, 42, 133, 0.10) 40%,
-      transparent 75%
-    );
-
-  animation:
-    puffFloatFive 45s ease-in-out infinite alternate;
-}
-
-
-
-.puff-6 {
-  width: 70vw;
-  height: 45vw;
-
-  left: 15vw;
-  top: 25vh;
-
-  background:
-    radial-gradient(
-      ellipse,
-      rgba(90, 35, 130, 0.22) 0%,
-      transparent 70%
-    );
-
-  animation:
-    puffFloatSix 50s ease-in-out infinite alternate;
-}
-
-
-
-
-.puff-7 {
-  width: 42vw;
-  height: 38vw;
-
-  left: 55vw;
-  top: 60vh;
-
-  background:
-    radial-gradient(
-      ellipse,
-      rgba(255, 42, 133, 0.18) 0%,
-      rgba(139, 58, 238, 0.10) 40%,
-      transparent 72%
-    );
-
-  animation:
-    puffFloatSeven 37s ease-in-out infinite alternate;
-}
-
-
-.puff-8 {
-  width: 50vw;
-  height: 32vw;
-
-  left: 5vw;
-  top: 5vh;
-
-  background:
-    radial-gradient(
-      ellipse,
-      rgba(76, 201, 240, 0.12) 0%,
-      rgba(139, 58, 238, 0.12) 40%,
-      transparent 75%
-    );
-
-  animation:
-    puffFloatEight 43s ease-in-out infinite alternate;
-}
-
-
-
-
-.smoke-mist {
-  position: absolute;
-
-  inset: -20%;
-
-  background:
-    radial-gradient(
-      ellipse at 20% 30%,
-      rgba(255, 255, 255, 0.025) 0%,
-      transparent 35%
-    ),
-    radial-gradient(
-      ellipse at 80% 70%,
-      rgba(255, 255, 255, 0.018) 0%,
-      transparent 40%
-    );
-
-  filter: blur(60px);
-
-  opacity: 0.7;
-
-  animation:
-    mistMovement 55s ease-in-out infinite alternate;
-}
-
-
-
-
-@keyframes hazeDriftOne {
   0% {
     transform:
-      translate(-8vw, -3vh)
-      scale(1);
-  }
-
-  50% {
-    transform:
-      translate(10vw, 7vh)
-      scale(1.15);
-  }
-
-  100% {
-    transform:
-      translate(-2vw, 12vh)
-      scale(0.95);
-  }
-}
-
-
-@keyframes hazeDriftTwo {
-  0% {
-    transform:
-      translate(8vw, 5vh)
+      translate(-50%, -50%)
       scale(1.05);
   }
 
   50% {
     transform:
-      translate(-12vw, -8vh)
-      scale(0.9);
+      translate(-48%, -52%)
+      scale(1.14);
   }
 
   100% {
     transform:
-      translate(5vw, 10vh)
-      scale(1.15);
-  }
-}
-
-
-
-@keyframes smokeJourneyOne {
-  0% {
-    transform:
-      translate(-3%, 2%)
-      rotate(0deg)
-      scale(1);
-  }
-
-  25% {
-    transform:
-      translate(5%, -4%)
-      rotate(4deg)
+      translate(-52%, -48%)
       scale(1.08);
   }
 
-  50% {
-    transform:
-      translate(9%, 5%)
-      rotate(-3deg)
-      scale(0.96);
-  }
+}
 
-  75% {
-    transform:
-      translate(-4%, 8%)
-      rotate(5deg)
-      scale(1.10);
-  }
 
-  100% {
+
+@keyframes smokeColourDrift {
+
+  0% {
     transform:
-      translate(-3%, 2%)
-      rotate(0deg)
+      translate(-3%, 1%)
       scale(1);
   }
-}
-
-
-@keyframes smokeJourneyTwo {
-  0% {
-    transform:
-      translate(6%, -5%)
-      rotate(0deg)
-      scale(1.05);
-  }
-
-  30% {
-    transform:
-      translate(-5%, 4%)
-      rotate(-6deg)
-      scale(0.95);
-  }
-
-  60% {
-    transform:
-      translate(-9%, -5%)
-      rotate(4deg)
-      scale(1.12);
-  }
 
   100% {
     transform:
-      translate(6%, -5%)
-      rotate(0deg)
-      scale(1.05);
-  }
-}
-
-
-@keyframes smokeJourneyThree {
-  0% {
-    transform:
-      translate(-6%, 4%)
-      rotate(0deg)
-      scale(0.95);
-  }
-
-  40% {
-    transform:
-      translate(8%, -7%)
-      rotate(8deg)
+      translate(3%, -2%)
       scale(1.08);
   }
 
-  70% {
-    transform:
-      translate(3%, 9%)
-      rotate(-5deg)
-      scale(1.15);
-  }
-
-  100% {
-    transform:
-      translate(-6%, 4%)
-      rotate(0deg)
-      scale(0.95);
-  }
 }
-
-
-
-
-@keyframes puffFloatOne {
-  0% {
-    transform:
-      translate(-5%, 5%)
-      scale(0.95)
-      rotate(-5deg);
-  }
-
-  100% {
-    transform:
-      translate(12%, -8%)
-      scale(1.15)
-      rotate(8deg);
-  }
-}
-
-
-@keyframes puffFloatTwo {
-  0% {
-    transform:
-      translate(5%, -5%)
-      scale(1);
-  }
-
-  100% {
-    transform:
-      translate(-10%, 12%)
-      scale(1.18);
-  }
-}
-
-
-@keyframes puffFloatThree {
-  0% {
-    transform:
-      translate(0, 8%)
-      scale(1.05)
-      rotate(0deg);
-  }
-
-  100% {
-    transform:
-      translate(-12%, -10%)
-      scale(0.9)
-      rotate(12deg);
-  }
-}
-
-
-@keyframes puffFloatFour {
-  0% {
-    transform:
-      translate(-8%, 0)
-      scale(1);
-  }
-
-  100% {
-    transform:
-      translate(10%, -12%)
-      scale(1.2);
-  }
-}
-
-
-@keyframes puffFloatFive {
-  0% {
-    transform:
-      translate(8%, 5%)
-      scale(0.9);
-  }
-
-  100% {
-    transform:
-      translate(-8%, 15%)
-      scale(1.15);
-  }
-}
-
-
-@keyframes puffFloatSix {
-  0% {
-    transform:
-      translate(0, -5%)
-      scale(1);
-  }
-
-  100% {
-    transform:
-      translate(10%, 8%)
-      scale(1.12);
-  }
-}
-
-
-@keyframes puffFloatSeven {
-  0% {
-    transform:
-      translate(-10%, 5%)
-      scale(1);
-  }
-
-  100% {
-    transform:
-      translate(8%, -10%)
-      scale(1.18);
-  }
-}
-
-
-@keyframes puffFloatEight {
-  0% {
-    transform:
-      translate(5%, -5%)
-      scale(1.05);
-  }
-
-  100% {
-    transform:
-      translate(-10%, 10%)
-      scale(0.92);
-  }
-}
-
-
-@keyframes mistMovement {
-  0% {
-    transform:
-      translate(-3%, 2%)
-      scale(1);
-  }
-
-  100% {
-    transform:
-      translate(5%, -4%)
-      scale(1.08);
-  }
-}
-
-
-
-
-@media (prefers-reduced-motion: reduce) {
-  .smoke-background *,
-  .smoke-background {
-    animation: none !important;
-  }
-}
-
 
 
 
 @media (max-width: 768px) {
-  .smoke-haze {
-    filter: blur(90px);
+
+  .smoke-video {
+    width: 150vw;
+    height: 150vh;
+
+    opacity: 0.45;
   }
 
-  .smoke-cloud {
-    filter: blur(28px);
-    opacity: 0.34;
-  }
-
-  .smoke-puff {
-    filter: blur(35px);
-  }
 }
 
+
+
+@media (prefers-reduced-motion: reduce) {
+
+  .smoke-video,
+  .smoke-tint {
+    animation: none;
+  }
+
+}
