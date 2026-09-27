@@ -1,36 +1,23 @@
-
 'use client';
 
 export default function SmokeBackground() {
   return (
-    <div
-      className="smoke-background"
-      aria-hidden="true"
-    >
-      {/* Deep atmospheric haze */}
-      <div className="smoke-haze smoke-haze-1" />
-      <div className="smoke-haze smoke-haze-2" />
+    <div className="smoke-background" aria-hidden="true">
 
-      {/* Main billowing smoke */}
-      <div className="smoke-cloud smoke-cloud-1">
-        <div className="smoke-puff puff-1" />
-        <div className="smoke-puff puff-2" />
-        <div className="smoke-puff puff-3" />
-      </div>
+      <video
+        className="smoke-video"
+        autoPlay
+        muted
+        loop
+        playsInline
+        preload="auto"
+      >
+        <source src="/smoke.mp4" type="video/mp4" />
+      </video>
 
-      <div className="smoke-cloud smoke-cloud-2">
-        <div className="smoke-puff puff-4" />
-        <div className="smoke-puff puff-5" />
-        <div className="smoke-puff puff-6" />
-      </div>
+      {/* Pink / purple / cyan color treatment */}
+      <div className="smoke-tint" />
 
-      <div className="smoke-cloud smoke-cloud-3">
-        <div className="smoke-puff puff-7" />
-        <div className="smoke-puff puff-8" />
-      </div>
-
-      {/* Fine atmospheric mist */}
-      <div className="smoke-mist" />
     </div>
   );
 }
