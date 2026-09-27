@@ -232,12 +232,9 @@ export default function LandingPage() {
               Our Story & Vision
             </span>
 
-            <h2 className="text-3xl sm:text-5xl font-extrabold uppercase tracking-tight">
-               <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2A85] via-[#8B3AEE] to-[#4CC9F0]">
-                
-              </span>
-            </h2>
+            <h2 className="font-agreloy text-5xl md:text-6xl lg:text-7xl text-white">
+  About Bachique
+</h2>
 
             <div className="space-y-6 text-gray-300 text-base sm:text-lg leading-relaxed text-center sm:text-justify max-w-3xl mx-auto">
               <p>
