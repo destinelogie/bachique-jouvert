@@ -190,9 +190,9 @@ export default function LandingPage() {
             <span className="inline-block px-4 py-1.5 rounded-full bg-[#FF2A85]/10 text-[#FF2A85] border border-[#FF2A85]/30 text-xs font-bold tracking-widest uppercase">
               Official Pre-Launch Access
             </span>
-            <h1 className="text-5xl sm:text-7xl md:text-8xl font-black tracking-tight uppercase leading-none">
+            <h1 className="font-agreloy text-5xl sm:text-7xl md:text-8xl font-black tracking-tight uppercase leading-none">
               Paint. Powder. <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2A85] via-[#8B3AEE] to-[#4CC9F0] drop-shadow-[0_10px_20px_rgba(255,42,133,0.3)]">
+              <span className="font-agreloy text-transparent bg-clip-text bg-gradient-to-r from-[#FF2A85] via-[#8B3AEE] to-[#4CC9F0] drop-shadow-[0_10px_20px_rgba(255,42,133,0.3)]">
                 Pure Bacchanal.
               </span>
             </h1>
