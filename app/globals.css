@@ -107,13 +107,11 @@ body {
 
   filter: blur(35px);
 
-  opacity: 0.42;
+  opacity: 0.58;
 }
 
 
-/* =========================================================
-   SMOKE CLOUD 1
-   ========================================================= */
+
 
 .smoke-cloud-1 {
   animation:
@@ -144,7 +142,7 @@ body {
 
   border-radius: 50%;
 
-  filter: blur(45px);
+  filter: blur(55px);
 
   transform-origin: center;
 
