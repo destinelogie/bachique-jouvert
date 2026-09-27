@@ -151,9 +151,9 @@ export default function LandingPage() {
             </span>
 
             <h2 className="text-3xl sm:text-5xl font-extrabold uppercase tracking-tight">
-              Bacchanal Sunrise. <br />
+               <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#FF2A85] via-[#8B3AEE] to-[#4CC9F0]">
-                Bacchanal Day Break.
+                
               </span>
             </h2>
 
