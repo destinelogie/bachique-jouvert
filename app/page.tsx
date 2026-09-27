@@ -39,49 +39,181 @@ export default function LandingPage() {
       
       {/* Fixed Centered Navigation */}
       <nav className="fixed top-0 left-0 w-full z-[999] bg-[#08070D]/95 backdrop-blur-md border-b border-white/10 py-3 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-7xl mx-auto flex items-center justify-between relative">
-          
-          {/* Left Navigation Links */}
-          <div className="hidden md:flex items-center space-x-6 font-medium text-sm text-gray-300">
-            <a href="#home" className="hover:text-[#FF2A85] transition">Home</a>
-            <a href="#about" className="hover:text-[#FF2A85] transition">About</a>
-            <Link href="/sections" className="hover:text-[#FF2A85] transition">Sections</Link>
-            <Link href="/waitlist" className="text-[#FF2A85] font-bold flex items-center space-x-1.5 hover:opacity-85 transition">
-              <span>Waitlist</span>
-              <span className="bg-[#FF2A85]/20 text-[#FF2A85] text-[10px] px-2 py-0.5 rounded-full border border-[#FF2A85]/30 uppercase tracking-wide">Pre-Launch</span>
-            </Link>
-            <a href="#memory-vault" className="hover:text-[#8B3AEE] transition">Memory Vault</a>
-            <a href="/merch" className="hover:text-[#4CC9F0] transition">Merch Store</a>
-          </div>
 
-          {/* Center Logo (Dead Center Positioning) */}
-          <div className="md:absolute md:left-1/2 md:-translate-x-1/2 flex justify-center">
-            <a href="#home" aria-label="Bachique J'ouvert Home">
-              <img 
-                src="./IMG_0979.png" 
-                alt="Bachique J'ouvert Logo" 
-                style={{ height: '60px', width: 'auto' }}
-                className="object-contain drop-shadow-[0_0_15px_rgba(255,42,133,0.4)] transition-transform hover:scale-105" 
-              />
-            </a>
-          </div>
+  <div className="max-w-[1440px] mx-auto grid grid-cols-[1fr_auto_1fr] items-center gap-4">
 
-          {/* Right Action Items */}
-          <div className="flex items-center space-x-4">
-            <Link href="/waitlist" className="relative p-2 text-gray-300 hover:text-[#FF2A85] transition" aria-label="Shopping Bag">
-              <ShoppingBag className="w-5 h-5" />
-              <span className="absolute top-1 right-1 bg-[#FF2A85] text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center">0</span>
-            </Link>
-            <Link href="/waitlist" className="hidden sm:inline-block bg-gradient-to-r from-[#FF2A85] via-[#8B3AEE] to-[#4CC9F0] text-white font-bold px-5 py-2 rounded-full text-xs uppercase tracking-wider transition shadow-lg shadow-[#FF2A85]/20 hover:opacity-90">
-              Join VIP Waitlist
-            </Link>
-            <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="md:hidden p-2 text-gray-300 hover:text-white" aria-label="Toggle Menu">
-              {mobileMenuOpen ? <X className="w-6 h-6 text-[#FF2A85]" /> : <Menu className="w-6 h-6" />}
-            </button>
-          </div>
+    {/* =========================================
+        LEFT NAVIGATION
+        ========================================= */}
 
-        </div>
-      </nav>
+    <div className="hidden lg:flex items-center justify-start gap-4 xl:gap-6 font-medium text-sm text-gray-300 min-w-0">
+
+      <a
+        href="#home"
+        className="hover:text-[#FF2A85] transition whitespace-nowrap"
+      >
+        Home
+      </a>
+
+      <a
+        href="#about"
+        className="hover:text-[#FF2A85] transition whitespace-nowrap"
+      >
+        About
+      </a>
+
+      <Link
+        href="/sections"
+        className="hover:text-[#FF2A85] transition whitespace-nowrap"
+      >
+        Sections
+      </Link>
+
+      <Link
+        href="/waitlist"
+        className="text-[#FF2A85] font-bold flex items-center gap-1.5 hover:opacity-85 transition whitespace-nowrap"
+      >
+        <span>Waitlist</span>
+
+        <span className="bg-[#FF2A85]/20 text-[#FF2A85] text-[9px] px-1.5 py-0.5 rounded-full border border-[#FF2A85]/30 uppercase tracking-wide">
+          Pre-Launch
+        </span>
+      </Link>
+
+    </div>
+
+
+    {/* =========================================
+        CENTER LOGO
+        ========================================= */}
+
+    <div className="flex items-center justify-center">
+
+      <a
+        href="#home"
+        aria-label="Bachique J'ouvert Home"
+      >
+        <img
+          src="/IMG_0979.png"
+          alt="Bachique J'ouvert Logo"
+          className="
+            object-contain
+            h-[52px]
+            lg:h-[56px]
+            xl:h-[60px]
+            w-auto
+            drop-shadow-[0_0_15px_rgba(255,42,133,0.4)]
+            transition-transform
+            hover:scale-105
+          "
+        />
+      </a>
+
+    </div>
+
+
+    {/* =========================================
+        RIGHT NAVIGATION + ACTIONS
+        ========================================= */}
+
+    <div className="hidden lg:flex items-center justify-end gap-3 xl:gap-5 min-w-0">
+
+      <a
+        href="#memory-vault"
+        className="hover:text-[#8B3AEE] transition whitespace-nowrap font-medium text-sm text-gray-300"
+      >
+        Memory Vault
+      </a>
+
+      <Link
+        href="/merch"
+        className="hover:text-[#4CC9F0] transition whitespace-nowrap font-medium text-sm text-gray-300"
+      >
+        Merch Store
+      </Link>
+
+
+      {/* Shopping Bag */}
+
+      <Link
+        href="/waitlist"
+        className="relative p-2 text-gray-300 hover:text-[#FF2A85] transition flex-shrink-0"
+        aria-label="Shopping Bag"
+      >
+        <ShoppingBag className="w-5 h-5" />
+
+        <span className="absolute top-0.5 right-0 bg-[#FF2A85] text-white text-[9px] font-bold rounded-full h-4 w-4 flex items-center justify-center">
+          0
+        </span>
+      </Link>
+
+
+      {/* VIP Button */}
+
+      <Link
+        href="/waitlist"
+        className="
+          hidden xl:inline-flex
+          bg-gradient-to-r
+          from-[#FF2A85]
+          via-[#8B3AEE]
+          to-[#4CC9F0]
+          text-white
+          font-bold
+          px-4
+          py-2
+          rounded-full
+          text-[10px]
+          uppercase
+          tracking-wider
+          transition
+          shadow-lg
+          shadow-[#FF2A85]/20
+          hover:opacity-90
+          whitespace-nowrap
+        "
+      >
+        Join VIP Waitlist
+      </Link>
+
+    </div>
+
+
+    {/* =========================================
+        MOBILE MENU BUTTON
+        ========================================= */}
+
+    <div className="lg:hidden flex items-center justify-end">
+
+      <Link
+        href="/waitlist"
+        className="relative p-2 text-gray-300 hover:text-[#FF2A85] transition"
+        aria-label="Shopping Bag"
+      >
+        <ShoppingBag className="w-5 h-5" />
+
+        <span className="absolute top-1 right-1 bg-[#FF2A85] text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center">
+          0
+        </span>
+      </Link>
+
+      <button
+        onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+        className="p-2 text-gray-300 hover:text-white"
+        aria-label="Toggle Menu"
+      >
+        {mobileMenuOpen ? (
+          <X className="w-6 h-6 text-[#FF2A85]" />
+        ) : (
+          <Menu className="w-6 h-6" />
+        )}
+      </button>
+
+    </div>
+
+  </div>
+
+</nav>
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
