@@ -1,3 +1,4 @@
+
 import type { Metadata } from 'next';
 import './globals.css';
 import SmokeBackground from './components/SmokeBackground';
@@ -15,11 +16,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-[#08070D] text-white relative">
-        {/* Persistent Moving Smoke Background across all pages */}
+
+        {/* Persistent smoke background */}
         <SmokeBackground />
 
-        {/* Page Content */}
-        <div className="relative z-10">{children}</div>
+        {/* Website content */}
+        <div className="relative z-10">
+          {children}
+        </div>
+
       </body>
     </html>
   );
