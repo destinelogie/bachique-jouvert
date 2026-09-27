@@ -1,4 +1,3 @@
-```css
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -714,4 +713,4 @@ body {
     filter: blur(35px);
   }
 }
-```
+
