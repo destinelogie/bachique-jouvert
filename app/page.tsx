@@ -35,7 +35,7 @@ export default function LandingPage() {
   }, []);
 
   return (
-    <div className="bg-[#08070D] text-white min-h-screen font-sans antialiased flex flex-col justify-between selection:bg-[#FF2A85]">
+    <div className="bg-transparent text-white min-h-screen font-sans antialiased flex flex-col justify-between selection:bg-[#FF2A85]">
       
       {/* Fixed Centered Navigation */}
       <nav className="fixed top-0 left-0 w-full z-[999] bg-[#08070D]/95 backdrop-blur-md border-b border-white/10 py-3 px-4 sm:px-6 lg:px-8">
