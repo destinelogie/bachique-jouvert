@@ -19,12 +19,12 @@ export default function SectionsPage() {
   const filtered = SECTIONS_DATA.filter(s => filter === 'all' || s.type === filter);
 
   return (
-    <div className="bg-[#08070D] text-white min-h-screen flex flex-col justify-between">
+    <div className="bg-transparent text-white min-h-screen flex flex-col justify-between">
       {/* Navbar */}
       <nav className="fixed top-0 left-0 w-full z-[999] bg-[#08070D]/95 border-b border-white/10 h-20 flex items-center">
         <div className="max-w-7xl mx-auto w-full px-4 flex items-center justify-between">
           <Link href="/" className="flex items-center">
-            <img src="./IMG_0979.png" alt="Bachique J'ouvert Logo" className="h-16 sm:h-20 max-w-[180px] sm:max-w-[220px] object-contain drop-shadow-[0_0_15px_rgba(255,42,133,0.4)]" />
+            <img src="/IMG_0979.png" alt="Bachique J'ouvert Logo" className="h-16 sm:h-20 max-w-[180px] sm:max-w-[220px] object-contain drop-shadow-[0_0_15px_rgba(255,42,133,0.4)]" />
           </Link>
           <div className="flex items-center space-x-4">
             <button className="relative p-2 text-gray-300">
@@ -39,7 +39,7 @@ export default function SectionsPage() {
       <main className="max-w-7xl mx-auto w-full px-4 pt-32 pb-20 space-y-12 flex-grow">
         <div className="text-center space-y-2">
           <span className="px-3 py-1 rounded-full bg-[#FF2A85]/10 text-[#FF2A85] text-xs font-bold uppercase tracking-widest border border-[#FF2A85]/30">Official 2026 Band Packages</span>
-          <h1 className="text-4xl sm:text-6xl font-black uppercase">Choose Your Section</h1>
+          <h1 className="font-agreloy text-4xl sm:text-6xl font-black uppercase">Choose Your Section</h1>
         </div>
 
         {/* Filter Buttons */}
